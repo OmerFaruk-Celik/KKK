@@ -15,24 +15,25 @@
 *   🛡️ **Otomatik Yedekleme:** Geri yüklenen her dosyanın orijinal halini `.bak` olarak saklama.
 *   📟 **Sayfalamalı Navigasyon:** Çok yoğun çalışma günlerinde bile geçmişte kolayca gezinme.
 
-## 🛠️ Kurulum
+## 🛠️ Kolay Kurulum
 
-### 1. Dosyayı İndirin
-
-Scripti bilgisayarınıza indirin veya kopyalayın:
+### Linux & macOS
+Terminali açın ve repoyu indirdiğiniz klasörde şu komutu çalıştırın:
 ```bash
 git clone https://github.com/OmerFaruk-Celik/KKK.git
 cd KKK
+chmod +x install.sh && ./install.sh
+source ~/.bashrc  # veya source ~/.zshrc
 ```
 
-### 2. Alias Tanımlayın (Önerilir)
-
-Terminalde her yerden sadece `kkk` yazarak ulaşmak için `.bashrc` veya `.zshrc` dosyanıza şu satırı ekleyin:
-```bash
-alias kkk='python3 ~/path/to/KKK/kkk.py'
+### Windows
+PowerShell'i Yönetici olarak açın ve repoyu indirdiğiniz klasörde şu komutu çalıştırın:
+```powershell
+git clone https://github.com/OmerFaruk-Celik/KKK.git
+cd KKK
+Set-ExecutionPolicy Bypass -Scope Process -Force; ./install.ps1
 ```
-
-Ardından: `source ~/.bashrc`
+*(Not: Kurulumdan sonra terminali kapatıp açmanız yeterlidir.)*
 
 ## 📖 Kullanım Rehberi
 
